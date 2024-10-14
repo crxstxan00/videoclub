@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Deadpool</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Pagina deadpool de este videoclub">
+		<link rel="stylesheet" type="text/css" href="../css/filmvideoclub.css">
+	</head>
+	<body>
+		<header>
+			<form class="formlogin" method="POST" autocomplete="off">
+				<div class="formpart1"><label class="llogin">Nombre de Usuario:</label>
+				<input class="ilogin" type="text" id="Nombre" name="Nombre" maxlength="10" minlength="4" required="required"></div>
+				<div class="formpart2"><label class="llogin">Contraseña:</label>
+				<input class="ilogin" type="password" id="password" name="pwd" maxlength="10" minlength="6" required="required"></div>
+				<div class="formpart3"><input class="isubmitform" type="submit" value="Login" name="Enviar"></div>
+			</form>
+			<figure>
+				<a href="../index.html"><img src="../img/logo.png" alt="enlaceiniciologo" class="logoweb"></a>
+			</figure>
+			<h1>Film Video Club</h1>
+			<form method="POST" autocomplete="off" class="buscador">
+				<input class="iregistro" type="search" list="buscador" name="films">
+				<datalist id="buscador">
+					<option value="Deadpool">
+					<option value="Jumanji">
+					<option value="Fast and Furious 8">
+				</datalist>
+				<input type="image" src="../img/lupa.png" alt="buscadorlupa" class="imgbuscador">
+			</form>
+		</header>
+		<nav>
+			<ul class="menu">
+				<li><a href="../index.html">Inicio</a></li>
+				<li>Películas
+					<ul class="submenu">
+						<li><a href="deadpool.html">Deadpool</a></li>
+						<li><a href="jumanji.html">Jumanji</a></li>
+						<li><a href="fastandfuriousocho.html">Fast and Furious 8</a></li>
+					</ul>
+				</li>
+				<li><a href="catalogo.html">Catálogo</a></li>
+				<li><a href="registro.html">Registro</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+		<h2>Deadpool</h2>
+			<div class="flex-container">
+				<div class="flex1">
+					<figure class="portada">
+						<img src="../img/caratulafrontal.jpg" class="caratulaimg" alt="caratula deadpool">
+					</figure>
+					<video src="../video/deadpooltrailer.mp4" loop="loop" class="videodeadpool" autoplay="autoplay" >
+					Tu navegador no es compatible con este vídeo
+					</video>
+					<figure class="cd">
+						<img src="../img/cd.png" alt="cd" class="cdimg">
+					</figure>
+					<audio controls="controls" autoplay="autoplay" class="soundtrack" src="../audio/Soundtrackdeadpool.mp3" loop="loop">
+						Tu navegador no es compatible con este sonido
+					</audio>
+					<div class="caratula animacioncaratula">
+						<img class="caratulafrontal" src="../img/caratulafrontal.jpg" alt="caratula deadpool">
+						<img class="caratulaborde" src="../img/caratulaborde.jpg" alt="caratula deadpool">
+						<img class="caratulapartedeatras" src="../img/caratulapartedeatras.jpg" alt="caratula deadpool">
+						<div class="bordesuperior"></div>
+						<div class="bordecentral"></div>
+						<div class="bordeinferior"></div>
+					</div>
+				</div>
+				<div class="flex3" id="sinopsis">
+					<p class="textdeadpool"> 
+						Deadpool, es un personaje de las historietas creado a principios de 1989 por el dibujante Rob Liefeld y el escritor Fabian Nicieza para la editorial norteamericana Marvel Comics. Su primera aparición fue en el número 98 de la colección Nuevos Mutantes (14 de febrero de 1991).
+
+						Una combinación de Punisher, el Universo de La Patrulla-X y X-Force, y los dibujos animados de la Warner. Más o menos así venía a definir Fabian Nicieza a Deadpool, el mercenario bocazas que él y Rob Liefeld crearon durante su colaboración en los últimos números de The New Mutants (#98 - #100) y los primeros de la colección que la sustituyó X-Force (1991). Y aún iba más lejos Nicieza, que llegaba a calificarlo como "un imbécil, comparado con el héroe típico", y lo remataba con un taxativo "no querrías que tu hija se casara con él". Ademas de ser el único héroe famoso que sabe que es un invento creado para divertir por lo que no se preocupa mucho.
+
+						Canalla, irreverente, dotado de un sentido del humor de lo más depravado y, sobre todo, con una abrumadora e irritante locuacidad.
+						Apodado Merc with a Mouth (el mercenario bocazas, en español), normalmente actúa enfundado en un traje de colores rojo y negro y lleva su rostro cubierto para proteger su verdadera identidad (Wade Winston Wilson) además de sus horribles cicatrices. Es a menudo catalogado como un mercenario, un villano, héroe o un antihéroe. Se caracteriza porque en sus conversaciones son constantes las referencias a la cultura popular y la utilización del sarcasmo y humor negro. Además, emplea todo tipo de alta tecnología y armamento para la ejecución de sus misiones. Al igual que sucede con Wolverine, la personalidad y habilidades de Deadpool son en gran medida resultado de haber sido sometido al programa paramilitar del gobierno canadiense conocido como Arma X, aunque su nacionalidad de origen es desconocida. Después de que Arma X curara su cáncer terminal implementando el "factor curativo" extraído de Wolverine, Deadpool quedó desfigurado y mentalmente inestable. Otras de sus habilidades son fuerza extraordinaria con capacidad máxima de soportar entre 15 y 20 toneladas, resistencia a golpes y disparos, agilidad mejorada, así como reflejos sobrehumanos. Diversos autores le dotaron la posibilidad de teletransportación (Deadpool ha adquirido diversos dispositivos que le permiten teletransportarse) y totalmente tiene inmunidad telepática (debido a que es muy retorcido provoca que no sea controlable mentalmente).
+					</p>
+				</div>
+				<div class="flex2" id="reparto">
+					<ul class="listareparto">
+							<li>Ryan Reynolds como Wade Wilson/Deadpool</li>
+							<li>Morena Baccarin como Vanessa Carlysle</li>
+							<li>Ed Skrein como Francis Freeman/Ajax</li>
+							<li>T.J. Miller como Jack Hammer/Weasel</li>
+							<li>Gina Carano como Christine/Angel Dust</li>
+							<li>Brianna Hildebrand como Ellie Phimister/Negasonic Teenage Warhead</li>
+							<li>Stefan Kapicic como Piotr Rasputin/Coloso</li>
+							<li>Leslie Uggams como Blind Al</li>
+							<li>Jed Rees como El Reclutador</li>
+							<li>Karan Soni como Dopinder</li>
+							<li>Isaac C. Singleton Jr. como Boothe</li>
+							<li>Randal Reeder como Buck</li>
+							<li>Stan Lee como un presentador de un club stripper</li>
+							<li>Rob Liefeld como un tatuador</li>
+							<li>Rob Hayter como Bob</li>
+						</ul>
+						<figure class="carrito">
+							<a href="compra.html"><img class="carritocompra" alt="comprar" src="../img/carritocompra.png"></a>
+						</figure>
+						<p class="pcarrito">Pincha la foto para comprar.</p>
+				</div>
+			</div>
+		<footer>
+			
+		</footer>
+	</body>
+</html>

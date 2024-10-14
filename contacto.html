@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formulario de Contacto</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="contacto para administrador del videoclub">
+		<link rel="stylesheet" type="text/css" href="../css/filmvideoclub.css">
+	</head>
+	<body>
+		<header>
+			<form class="formlogin" method="POST" autocomplete="off">
+				<div class="formpart1"><label class="llogin">Nombre de Usuario:</label>
+				<input class="ilogin" type="text" id="Nombre" name="Nombre" maxlength="10" minlength="4" required="required"></div>
+				<div class="formpart2"><label class="llogin">Contraseña:</label>
+				<input class="ilogin" type="password" id="password" name="pwd" maxlength="10" minlength="6" required="required"></div>
+				<div class="formpart3"><input class="isubmitform" type="submit" value="Login" name="Enviar"></div>
+			</form>
+			<figure>
+				<a href="../index.html"><img src="../img/logo.png" alt="enlaceiniciologo" class="logoweb"></a>
+			</figure>
+			<h1>Film Video Club</h1>
+			<form method="POST" autocomplete="off" class="buscador">
+				<input class="iregistro" type="search" list="buscador" name="films">
+				<datalist id="buscador">
+					<option value="Deadpool">
+					<option value="Jumanji">
+					<option value="Fast and Furious 8">
+				</datalist>
+				<input type="image" src="../img/lupa.png" alt="lupabuscador" class="imgbuscador">
+			</form>
+		</header>
+		<nav>
+			<ul class="menu">
+				<li><a href="../index.html">Inicio</a></li>
+				<li>Películas
+					<ul class="submenu">
+						<li><a href="deadpool.html">Deadpool</a></li>
+						<li><a href="jumanji.html">Jumanji</a></li>
+						<li><a href="fastandfuriousocho.html">Fast and Furious 8</a></li>
+					</ul>
+				</li>
+				<li><a href="catalogo.html">Catálogo</a></li>
+				<li><a href="registro.html">Registro</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+		<h3>Hoja de Contacto</h3>
+		<form class="contacto">
+			<label class="lregistro">Nombre y apellidos:</label>
+			<input class="iregistro" type="text" name="nombreyapellidos" required="required" minlength="3" pattern="[a-zA-Z]{32}"><span>(Obligatorio)</span><br>
+			<label class="lregistro">E-mail:</label>
+			<input class="iregistro" type="email" name="emailconact" required="required"><span>(Obligatorio)</span><br>
+			<label class="lregistro">Motivo</label>
+			<select class="iregistro" name="motivofallas">
+				<option value="problemacargar">Problema carga de video</option>
+				<option value="piniciosesion">Problema inicio de sesión</option>
+				<option value="paspecto">Problema de aspecto</option>
+				<option value="nocargaweb">No carga la página</option>
+				<option value="pagonorealizadocorrectamente">El pago no se ha realizado correctamente</option>
+			</select><br>
+			<label class="lregistro">Explique su motivo de consulta;</label>
+			<textarea minlength="10">
+			Explique su motivo...
+			</textarea><br>
+			<input class="sformregistro" type="reset" name="Reset" value="Borrar">	
+			<input class="sformregistro" type="submit" name="Enviar" value="Acabar">	
+		</form>
+		<footer>
+			
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Registro</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Registro de este videoclub">
+		<link rel="stylesheet" type="text/css" href="../css/filmvideoclub.css">
+	</head>
+	<body>
+		<header>
+			<form class="formlogin" method="POST" autocomplete="off">
+				<div class="formpart1"><label class="llogin" for="Nombrelogin">Nombre de Usuario:</label>
+				<input class="ilogin" type="text" id="Nombrelogin" name="Nombre" maxlength="10" minlength="4" required="required"></div>
+				<div class="formpart2"><label class="llogin" for="passwordlogin">Contraseña:</label>
+				<input class="ilogin" type="password" id="passwordlogin" name="pwd" maxlength="10" minlength="6" required="required"></div>
+				<div class="formpart3"><input class="isubmitform" type="submit" value="Login" name="Enviar"></div>
+			</form>
+			<figure>
+				<a href="../index.html"><img src="../img/logo.png" alt="enlaceiniciologo" class="logoweb"></a>
+			</figure>
+			<h1>Film Video Club</h1>
+			<form method="POST" autocomplete="off" class="buscador">
+				<input class="iregistro" type="search" list="buscador" name="films">
+				<datalist id="buscador">
+					<option value="Deadpool">
+					<option value="Jumanji">
+					<option value="Fast and Furious 8">
+				</datalist>
+				<input type="image" src="../img/lupa.png" alt="lupabuscador" class="imgbuscador">
+			</form>
+		</header>
+		<nav>
+			<ul class="menu">
+				<li><a href="../index.html">Inicio</a></li>
+				<li>Películas
+					<ul class="submenu">
+						<li><a href="deadpool.html">Deadpool</a></li>
+						<li><a href="jumanji.html">Jumanji</a></li>
+						<li><a href="fastandfuriousocho.html">Fast and Furious 8</a></li>
+					</ul>
+				</li>
+				<li><a href="catalogo.html">Catálogo</a></li>
+				<li><a href="registro.html">Registro</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+		<h3>Crea tu cuenta</h3>
+		<form class="formregistro" method="POST" autocomplete="off">
+			<label class="lregistro" for="Nombre">Nombre:</label>
+			<input class="iregistro" type="text" id="Nombre" name="Nombre" required="required" placeholder="Nombre completo" pattern="[a-zA-z]{2,20}" maxlength="20"><span>(2 a 20 caracteres)</span><br>
+			<label class="lregistro" for="Apellidos">Apellidos:</label>
+			<input class="iregistro" type="text" id="Apellidos" name="Apellidos" pattern="[a-zA-z]{2,20}" maxlength="20" required="required" placeholder="Agrege sus apellidos"><span>(Obligatorio)</span><br>
+			<label class="lregistro" for="Nickname">Nombre de usuario:</label>
+			<input class="iregistro" type="text" id="Nickname" name="Nickname" maxlength="20" pattern="[a-zA-z]{2,20}" required="required" placeholder="Ej: nick"><span>(2 a 20 caracteres)</span><br>
+			<label class="lregistro" for="password">Contraseña:</label>
+			<input class="iregistro" type="password" id="password" name="pwd" maxlength="10" pattern="[a-zA-z0-9]{6,10}" required="required" placeholder="Introduzca contraseña nueva"><span>(Entre 6 y 10 caracteres)</span><br>
+			<label class="lregistro" for="password2">Repetir Contraseña:</label>
+			<input class="iregistro" type="password" id="password2" name="repeatpwd" maxlength="10" pattern="[a-zA-z0-9]{6,10}" required="required" placeholder="Repetir contraseña"><br>
+			<label class="lregistro" for="datadate">Fecha de Nacimiento:</label>
+			<input class="iregistro" type="date" id="datadate" name="FechadeNacimiento" required="required"><span>(Obligatorio)</span><br>
+			<label  class="lregistro">Sexo:</label>
+			<input type="radio" name="Sexos" value="Famele" checked="checked">Famele
+			<input type="radio" name="Sexo" value="Male">Male
+			<br>
+			<label class="lregistro" for="telmovil">Teléfono móvil</label>
+			<input class="iregistro" type="tel" id="telmovil" name="n.móvil" minlength="9" pattern="[0-9]{9}" placeholder="+34612345678"><span>(Opcional)</span><br>
+			<label class="lregistro">DNI</label>
+			<input class="iregistro" type="text" name="DNI" required="required" pattern="[0-9]{8}[a-zA-z]" maxlength="9" placeholder="12345678A"><span>(Obligatorio)</span><br>
+			<label class="lregistro" for="e-mail">Correo electrónico</label>
+			<input class="iregistro" type="email" id="e-mail" name="correo" maxlength="30" pattern="[a-zA-z]{10,30}" placeholder="example@gmail.com"><span>(Obligatorio)</span><br>
+			<label class="lregistro" for="pelisvistas">Peliculas vistas el año pasado:</label>
+			<select class="iregistro" id="pelisvistas">
+				<option>Entre 10 y 20</option>
+				<option>Ninguna</option>
+				<option>Menos de 10</option>
+				<option>Mas de 20</option>
+			</select><br>
+			<label class="lregistro">Que lectores usas?</label><br>
+			<input type="checkbox" value="DVD">DVD<br>
+			<input type="checkbox" value="Blu-ray Disc">Blu-ray Disc<br>
+			<input type="checkbox" value="vhs">VHS<br>
+			<input type="checkbox" value="Laserdisc">Laserdisc<br>
+			<input type="checkbox" value="umd">UMD<br>
+			<input type="checkbox" value="betamax">Betamax<br>
+			<label class="lregistro" for="licencia">Acepto los términos de licéncia</label>
+			<input type="checkbox" name="acepto" id="licencia" required="required"><span>(Obligatorio)</span><br>
+			<input class="sformregistro" type="reset" value="Reset" name="Borrar">
+			<input class="sformregistro" type="submit" value="Enviar" name="Iniciar">
+		</form>
+		<footer>
+			
+		</footer>
+	</body>
+</html>

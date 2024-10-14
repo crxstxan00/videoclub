@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Compra</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Pàgina de compra">
+		<link rel="stylesheet" type="text/css" href="../css/filmvideoclub.css">
+	</head>
+	<body>
+		<header>
+			<form class="formlogin" method="POST" autocomplete="off">
+				<div class="formpart1"><label class="llogin">Nombre de Usuario:</label>
+				<input class="ilogin" type="text" id="Nombre" name="Nombre" maxlength="10" minlength="4" required="required"></div>
+				<div class="formpart2"><label class="llogin">Contraseña:</label>
+				<input class="ilogin" type="password" id="password" name="pwd" maxlength="10" minlength="6" required="required"></div>
+				<div class="formpart3"><input class="isubmitform" type="submit" value="Login" name="Enviar"></div>
+			</form>
+			<h1>Film Video Club</h1>
+			<form method="POST" autocomplete="off" class="buscador">
+				<input class="iregistro" type="search" list="buscador" name="films">
+				<datalist id="buscador">
+					<option value="Deadpool">
+					<option value="Jumanji">
+					<option value="Fast and Furious 8">
+				</datalist>
+				<input type="image" src="../img/lupa.png" alt="lupabuscador" class="imgbuscador">
+			</form>
+		</header>
+		<h2>Compra</h2>
+		<form>
+			<label class="lcompra">Pelicula a comprar:</label><br>
+			<input class="icheckbox" type="checkbox" value="deadpool">Deadpool<br>
+			<input class="icheckbox" type="checkbox" value="jumanji">Jumanji<br>
+			<input class="icheckbox" type="checkbox" value="fastandfuriousocho">Fast and Fuirous 8<br>
+			<label class="lcompra">Pagament:</label><br>
+			<input class="iradio" type="radio" name="pay" value="paypal">PayPal<br>
+			<input class="iradio" type="radio" name="pay" value="VISA">VISA<br>
+			<input class="iradio" type="radio" name="pay" value="transferencia">Transferéncia<br>
+			<input class="iradio" type="radio" name="pay" value="contrareembolso">Contra Reembolso<br>
+			<label class="lcompra" for="coorreo">Correo:</label>
+			<input class="icompra" type="email" id="coorreo" name="correo" required="required" placeholder="Ingrese su correo" minlength="8"><br>
+			<label class="lcompra" for="calle">Calle:</label>
+			<input class="icompra" type="text" id="calle" name="llegada" minlength="2" required="required" placeholder="Ingrese su lugar de llegada de envio"><br>
+			<label class="lcompra" for="nvivienda">Nº vivienda:</label>
+			<input class="icompra" type="text" name="vivienda" id="nvivienda" required="required" placeholder="nº de vivienda" minlength="1"><br>
+			<label class="lcompra" for="poblacionn">Población:</label>
+			<input class="icompra" type="text" name="poblacion" id="poblacionn" required="required" placeholder="Ciudad o pueblo"><br>
+			<label class="lcompra" for="codigo">Codigo postal:</label>
+			<input class="icompra" type="text" name="code" id="codigo" required="required"><br>
+			<label class="lcompra">País</label>
+			<select class="iselect">
+				<option>E.E.U.U.</option>
+				<option>Spain</option>
+				<option>France</option>
+			</select><br>
+			<label class="lcompra">Ciudad o pueblo</label>
+			<select class="iselect">
+				<option>Terrassa</option>
+				<option>Madrid</option>
+				<option>Barcelona</option>
+			</select><br>
+			<label class="lcompra">Modo de envió:</label>
+			<select class="iselect">
+				<option>Urgente</option>
+				<option>Normal</option>
+				<option>Recogida en tienda</option>
+			</select><br>
+			<label class="lcompra" for="licencia">Acepto los términos de licéncia</label>
+			<input type="checkbox" name="acepto" id="licencia" required="required"><span>(Obligatorio)</span><br>
+			<input class="sformcompra" type="reset" value="Reset" name="Borrar">
+			<input class="sformcompra" type="submit" value="Enviar" name="Iniciar">
+		</form>
+		<footer>
+			
+		</footer>
+	</body>
+</html>

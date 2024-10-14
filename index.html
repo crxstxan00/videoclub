@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Film Video Club</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Pagina inicio de este videoclub">
+		<meta name="keywords" content="index, deadpool, perfectosdesconocidos, catalogo, login, registro.">
+		<link rel="stylesheet" type="text/css" href="css/filmvideoclub.css">
+	</head>
+	<body>
+		<header>
+			<form class="formlogin" method="POST" autocomplete="off">
+				<div class="formpart1"><label class="llogin">Nombre de Usuario:</label>
+				<input class="ilogin" type="text" id="Nombre" name="Nombre" maxlength="10" minlength="4" required="required"></div>
+				<div class="formpart2"><label class="llogin">Contraseña:</label>
+				<input class="ilogin" type="password" id="password" name="pwd" maxlength="10" minlength="6" required="required"></div>
+				<div class="formpart3"><input class="isubmitform" type="submit" value="Login" name="Enviar"></div>
+			</form>
+			<figure>
+				<a href="index.html"><img src="img/logo.png" alt="enlaceiniciologo" class="logoweb"></a>
+			</figure>
+			<h1>Film Video Club</h1>
+			<form method="POST" autocomplete="off" class="buscador">
+				<input class="iregistro" type="search" list="buscador" name="films">
+				<datalist id="buscador">
+					<option value="Deadpool">
+					<option value="Jumanji">
+					<option value="Fast and Furious 8">
+				</datalist>
+				<input type="image" src="img/lupa.png" alt="buscadorlupa" class="imgbuscador">
+			</form>
+		</header>
+		<nav>
+			<ul class="menu">
+				<li><a href="index.html">Inicio</a></li>
+				<li>Películas
+					<ul class="submenu">
+						<li><a href="subwebs/deadpool.html">Deadpool</a></li>
+						<li><a href="subwebs/jumanji.html">Jumanji</a></li>
+						<li><a href="subwebs/fastandfuriousocho.html">Fast and Furious 8</a></li>
+					</ul>
+				</li>
+				<li><a href="subwebs/catalogo.html">Catálogo</a></li>
+				<li><a href="subwebs/registro.html">Registro</a></li>
+				<li><a href="subwebs/contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+		<h2>Video Club</h2>
+		<div class="grid-container">
+			<aside class="asidea">
+				<p class="textindex">
+					Un videoclub es un negocio que permite adquirir temporalmente al usuario un servicio (en este caso de vídeo) a cambio de un pequeño precio, un proceso también conocido como alquiler. Normalmente antes de proporcionar el artículo, la tienda pide al cliente su información para cobrarle (tarjeta de crédito) y datos de identificación como el DNI para evitar fraudes y cobrar más si se atrasa el retorno del mismo. En el caso de los videoclubes por streaming cómo netflix, no hay este problema de que no se devuelve el artículo, puesto que la gran ventaja es que no se trabaja con nada material.
+
+					En España no hay empresas que proporcionen este servicio, pero podemos ver algunas como Filmamora, Cineclick, Filmotech, Filmin, Wuaki que sí que lo hacen. Algunas empresas que ofrecen alquiler en línea son Blockbuster, Netflix, ehit, Lovefilm y otras.
+
+					Actualmente, y gracias a las nuevas tecnologías, se pueden hacer videoclubes "inteligentes" que recomiendan películas según los gustos personales. Para llevar a término esto se necesitan algoritmos de aprendizaje para que la máquina pueda hacer el trabajo de un humano y procesar qué película le gustará más que otra a cada persona. Este proceso se basa generalmente en criterios como valoraciones del usuario sobre la película o qué géneros son los que más ve cada usuario. Para conseguir algoritmos que trabajen mejor hay concursos anuales en los cuales todo el mundo presenta sus algoritmos, y se decide un ganador siguiendo unos criterios preestablecidos. Una empresa que lo organiza mundialmente es Netflix, que cada año da de premio un millón de dólares al ganador.
+				</p>
+			</aside>
+			<aside class="asideb">
+				<figure>
+					<img src="img/videocluba.jpg" class="fotoindexa" alt="foto de un video club">
+				</figure>
+			</aside>
+			<aside class="asidec">
+				<figure>
+					<img src="img/videoclubb.jpg" class="fotoindexb" alt="foto de un video club">
+				</figure>
+			</aside>
+		</div>
+		<footer>
+			<div id="mapaweb">
+				<ul class="mapaweb">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="subwebs/catalogo.html">Catálogo</a></li>
+					<li><a href="subwebs/registro.html">Registro</a></li>
+					<li><a href="subwebs/contacto.html">Contacto</a></li>
+				</ul>
+				<ul class="mapawebdos">
+					<li><a href="subwebs/deadpool.html">Deadpool</a></li>
+					<li><a href="subwebs/jumanji.html">Jumanji</a></li>
+					<li><a href="subwebs/fastandfuriousocho">Fast and Furious 8</a></li>
+				</ul>
+			</div>
+		</footer>		
+	</body>
+</html>

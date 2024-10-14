@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Fast and Fuirous 8</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="pagina fast de este videoclub">
+		<link rel="stylesheet" type="text/css" href="../css/filmvideoclub.css">
+	</head>
+	<body>
+		<header>
+			<form class="formlogin" method="POST" autocomplete="off">
+				<div class="formpart1"><label class="llogin">Nombre de Usuario:</label>
+				<input class="ilogin" type="text" id="Nombre" name="Nombre" maxlength="10" minlength="4" required="required"></div>
+				<div class="formpart2"><label class="llogin">Contraseña:</label>
+				<input class="ilogin" type="password" id="password" name="pwd" maxlength="10" minlength="6" required="required"></div>
+				<div class="formpart3"><input class="isubmitform" type="submit" value="Login" name="Enviar"></div>
+			</form>
+			<figure>
+				<a href="../index.html"><img src="../img/logo.png" alt="enlaceiniciologo" class="logoweb"></a>
+			</figure>
+			<h1>Film Video Club</h1>
+			<form method="POST" autocomplete="off" class="buscador">
+				<input class="iregistro" type="search" list="buscador" name="films">
+				<datalist id="buscador">
+					<option value="Deadpool">
+					<option value="Jumanji">
+					<option value="Fast and Furious 8">
+				</datalist>
+				<input type="image" src="../img/lupa.png" alt="buscadorlupa" class="imgbuscador">
+			</form>
+		</header>
+		<nav>
+			<ul class="menu">
+				<li><a href="../index.html">Inicio</a></li>
+				<li>Películas
+					<ul class="submenu">
+						<li><a href="deadpool.html">Deadpool</a></li>
+						<li><a href="jumanji.html">Jumanji</a></li>
+						<li><a href="fastandfuriousocho.html">Fast and Furious 8</a></li>
+					</ul>
+				</li>
+				<li><a href="catalogo.html">Catálogo</a></li>
+				<li><a href="registro.html">Registro</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+		<h2>Fast and Furious 8</h2>
+		<div class="flex-container">
+			<div class="flex1">
+				<figure class="portada">
+					<img src="../img/fast8.png" class="caratulaimg" alt="caratula deadpool">
+				</figure>
+				<video src="../video/videofast.mp4" loop="loop" class="videodeadpool" autoplay="autoplay" >
+				Tu navegador no es compatible con este vídeo
+				</video>
+				<figure class="cd">
+					<img src="../img/cdfast.png" alt="cd" class="cdimg">
+				</figure>
+				<audio controls="controls" autoplay="autoplay" class="soundtrack" src="../audio/soundtrackfast.mp3" loop="loop">
+					Tu navegador no es compatible con este sonido
+				</audio>
+				<div class="caratula animacioncaratula">
+					<img class="caratulafrontal" src="../img/fast8.png" alt="caratula deadpool">
+					<img class="caratulaborde" src="../img/bordefast.png" alt="caratula deadpool">
+					<img class="caratulapartedeatras" src="../img/caratulatraserafast.png" alt="caratula deadpool">
+					<div class="bordesuperior"></div>
+					<div class="bordecentral"></div>
+					<div class="bordeinferior"></div>
+				</div>
+			</div>
+			<div class="flex3" id="sinopsis">
+				<p class="textdeadpool"> 
+					La carrera ha comenzado. Dom Toretto (Vin Diesel) y su equipo volverán en esta ocasión con más ganas de guerra que nunca. No faltarán los excesos de velocidad y la adrenalina a raudales para un filme del que se espera que sea la entrega con más acción de esta saga callejera por excelencia. 
+
+					F. Gary Gray (Straight Outta Compton, The Italian Job) se encarga de la dirección de este octavo film de la taquillera saga. En el reparto, actores bien conocidos de la franquicia como Vin Diesel (xXx: The Return of Xander Cage, El último cazador de brujas), Dwayne Johnson (Un espía y medio, Asalto al furgón blindado), Jason Statham (Los mercenarios 3, Asesinos de élite), Tyrese Gibson (Transformers: El lado oscuro de la luna, La carrera de la muerte) y Michelle Rodriguez (Resident Evil 5: Venganza, Avatar). Las nuevas incorporaciones de esta entrega son las de los actores Scott Eastwood (Jóvenes sicarios, Corazones de acero) y Charlize Theron (Las crónicas de Blancanieves: El Cazador y la Reina del Hielo, Mad Max: Furia en la carretera), además de Kurt Russell (Los odiosos ocho, Bone Tomahawk), que ya intervino en Fast Furious 7 (2015)
+					La carrera ha comenzado. Dom Toretto (Vin Diesel) y su equipo volverán en esta ocasión con más ganas de guerra que nunca. No faltarán los excesos de velocidad y la adrenalina a raudales para un filme del que se espera que sea la entrega con más acción de esta saga callejera por excelencia. 
+
+					F. Gary Gray (Straight Outta Compton, The Italian Job) se encarga de la dirección de este octavo film de la taquillera saga. En el reparto, actores bien conocidos de la franquicia como Vin Diesel (xXx: The Return of Xander Cage, El último cazador de brujas), Dwayne Johnson (Un espía y medio, Asalto al furgón blindado), Jason Statham (Los mercenarios 3, Asesinos de élite), Tyrese Gibson (Transformers: El lado oscuro de la luna, La carrera de la muerte) y Michelle Rodriguez (Resident Evil 5: Venganza, Avatar). Las nuevas incorporaciones de esta entrega son las de los actores Scott Eastwood (Jóvenes sicarios, Corazones de acero) y Charlize Theron (Las crónicas de Blancanieves: El Cazador y la Reina del Hielo, Mad Max: Furia en la carretera), además de Kurt Russell (Los odiosos ocho, Bone Tomahawk), que ya intervino en Fast Furious 7 (2015)
+				</p>
+			</div>
+			<div class="flex2" id="reparto">
+				<ul class="listareparto">
+					<li>Vin Diesel como Dominic Toretto</li>
+					<li>Dwayne Johnson, como el agente Lucas "Luke" Hobbs</li>
+					<li>Charlize Theron como Cipher</li>
+					<li><li>Jason Statham como Deckard Shaw</li>
+					<li>Michelle Rodríguez como Leticia «Letty» Ortiz</li>
+					<li>Tyrese Gibson como Roman «Rome» Pearce</li>
+					<li>Chris Bridges como Tej Parker</li>
+					<li>Nathalie Emmanuel es Megan Ramsey</li>
+					<li>Kurt Russell como el agente Frank Petty/Mr. Nobody</li>
+					<li>Kristofer Hivju como Connor Rhodes</li>
+					<li>Scott Eastwood, como Eric Reisner</li>
+					<li>Helen Mirren, como Magdalene Shaw</li>
+					<li>Elsa Pataky, como Elena Neves</li>
+					<li>Luke Evans como Owen Shaw</li>
+					<li>Don Omar, como Rico Santos</li>
+					<li>Tego Calderón, como Tego Leo</li>
+					<li>Eden Estrella, es Samantha Hobbs</li>
+				</ul>
+				<figure class="carrito">
+						<a href="compra.html"><img class="carritocompra" alt="comprar" src="../img/carritocompra.png"></a>
+					</figure>
+					<p class="pcarrito">Pincha la foto para comprar.</p>
+			</div>
+		</div>
+		<footer>
+			
+		</footer>
+	</body>
+</html>
